@@ -3,20 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark TODO List (View Only)</title>
+    <title>Dark TODO List with Markdown</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Dark TODO List</h1>
+        <h1>TODO List</h1>
         <ul id="todo-list">
-            <li>Finish writing project report</li>
-            <li>Read the latest AI research paper</li>
-            <li>Plan grocery shopping for the week</li>
-            <li>Go for a 30-minute run</li>
-            <li>Organize workspace and clean desk</li>
+            <li data-markdown="true">
+**Monazite Line**
+- processes monazite for cerium and samarium
+- current space is behind platline but probably not enough space
+- precurser mats will need two Exxons, put in same area
+- some precursers are made at platine, share with storagebus/interface kiss
+            </li>
+            <li data-markdown="true">
+**Universal Precise Assembler**
+- half of the programming circuit handling is done
+- Precise assembler casings needs cerium
+            </li>
+            <li data-markdown="true">
+**VAC Nuke**
+- running off server rack to the right of the LSC
+- LUA script works, nukes work, cables/p2p are not sending
+power correctly based on attached buffer not charging
+            </li>
+            <li data-markdown="true">
+**New ME Controller**
+- build migration plan off of old ME Controller
+- might be able to do interface/interface kiss to share storage
+during migration
+            </li>
         </ul>
-        <p><em>Note: This list is view-only. Tasks cannot be modified by viewers.</em></p>
-    </div>
+        </div>
+
+    <!-- Include Marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

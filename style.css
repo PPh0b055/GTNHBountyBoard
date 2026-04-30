@@ -13,35 +13,49 @@ body {
     border: 2px solid #8a2be2; /* purple border */
     padding: 25px;
     border-radius: 15px;
-    width: 350px;
-    text-align: center;
+    width: 400px;
+    text-align: left;
     box-shadow: 0 0 15px rgba(138, 43, 226, 0.5); /* subtle purple glow */
 }
 
 h1 {
-    color: #9b59b6; /* purple heading */
+    color: #9b59b6;
     text-shadow: 0 0 8px rgba(155, 89, 182, 0.7);
+    text-align: center;
 }
 
 ul {
     list-style: none;
     padding: 0;
     margin-top: 20px;
-    text-align: left;
 }
 
 li {
     padding: 10px 15px;
-    margin: 5px 0;
-    background: #2c2c2c; /* darker item background */
-    border-left: 4px solid #9b59b6; /* purple highlight bar */
+    margin: 10px 0;
+    background: #2c2c2c;
+    border-left: 4px solid #9b59b6;
     border-radius: 5px;
-    transition: background 0.3s, transform 0.2s;
+    transition: background 0.3s;
 }
 
 li:hover {
-    background: #3a1f5d; /* deep purple hover */
-    transform: translateX(5px);
+    background: #3a1f5d;
+}
+
+/* Markdown sublists styling */
+li ul {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+li ul li {
+    background: #3b2a4b;
+    border-left: 3px solid #bb88ff;
+    padding: 5px 10px;
+    margin: 3px 0;
+    border-radius: 4px;
+    font-size: 0.9em;
 }
 
 p {
